@@ -2,7 +2,7 @@ source "https://rubygems.org"
 
 gemspec
 
-gem 'alchemy_cms', git: 'git@github.com:AlchemyCMS/alchemy_cms.git', branch: 'master'
+gem 'alchemy_cms', github: 'AlchemyCMS/alchemy_cms', branch: 'master'
 gem 'sassc-rails'
 gem 'sqlite3' if ENV['DB'].nil? || ENV['DB'] == 'sqlite'
 gem 'mysql2'  if ENV['DB'] == 'mysql'
